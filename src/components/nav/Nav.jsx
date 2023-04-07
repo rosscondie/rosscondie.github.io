@@ -12,19 +12,39 @@ const Nav = () => {
 
   return (
     <nav>
-      <a href="#" className={activeNav === '#' ? 'active' : ''}>
+      <a
+        href="#"
+        onClick={() => setActiveNav('#')}
+        className={activeNav === '#' ? 'active' : ''}
+      >
         <IoHome />
       </a>
-      <a href="#about">
+      <a
+        href="#about"
+        onClick={() => setActiveNav('#about')}
+        className={activeNav === '#about' ? 'active' : ''}
+      >
         <FaUserAlt />
       </a>
-      <a href="#experience">
+      <a
+        href="#experience"
+        onClick={() => setActiveNav('#experience')}
+        className={activeNav === '#experience' ? 'active' : ''}
+      >
         <ImBook />
       </a>
-      <a href="#portfolio">
+      <a
+        href="#portfolio"
+        onClick={() => setActiveNav('#portfolio')}
+        className={activeNav === '#portfolio' ? 'active' : ''}
+      >
         <FaBriefcase />
       </a>
-      <a href="#contact">
+      <a
+        href="#contact"
+        onClick={() => setActiveNav('#contact')}
+        className={activeNav === '#contact' ? 'active' : ''}
+      >
         <MdMessage />
       </a>
     </nav>
