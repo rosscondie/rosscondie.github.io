@@ -5,11 +5,14 @@ import { FaUserAlt } from 'react-icons/fa';
 import { ImBook } from 'react-icons/im';
 import { FaBriefcase } from 'react-icons/fa';
 import { MdMessage } from 'react-icons/md';
+import { useState } from 'react';
 
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#');
+
   return (
     <nav>
-      <a href="#">
+      <a href="#" className={activeNav === '#' ? 'active' : ''}>
         <IoHome />
       </a>
       <a href="#about">
