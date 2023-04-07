@@ -2,7 +2,7 @@ import React from 'react';
 import CTA from './CTA';
 import './Header.css';
 import HeaderSocials from './HeaderSocials';
-import me from '../../assets/me.png';
+import ME from '../../assets/me.png';
 // import Me from '../../assets/me.png'
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
         <CTA />
         <div className="me">
           {/* img src should be src={ME} */}
-          <img src={me} alt="" />
+          <img src={ME} alt="" />
         </div>
         <HeaderSocials />
 
