@@ -19,6 +19,7 @@
 }
 
 .about__me-image {
+  height: 105%;
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
@@ -31,7 +32,7 @@
 
 .about__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -61,7 +62,7 @@
 }
 
 .about__card small {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--color-light);
 }
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import './About.css';
 import ME from '../../assets/me-about.jpg';
-import { FaAward } from 'react-icons/fa';
-import { BsFillPeopleFill } from 'react-icons/bs';
-import { FaRegFolderOpen } from 'react-icons/fa';
+import { FaPeopleCarry } from 'react-icons/fa';
+import { HiOutlineLightBulb } from 'react-icons/hi';
+import { BiPaint } from 'react-icons/bi';
+import { BsMegaphone } from 'react-icons/bs';
 
 const About = () => {
   return (
@@ -14,34 +15,56 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="About Me" />
           </div>
         </div>
 
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <FaPeopleCarry className="about__icon" />
+              <h5>Team Player</h5>
+              <small>
+                You can't grow without a team! It allows people with different
+                strengths to work together.
+              </small>
             </article>
             <article className="about__card">
-              <BsFillPeopleFill className="about__icon" />
-              <h5>Clients</h5>
-              <small>300+ World Wide</small>
+              <HiOutlineLightBulb className="about__icon" />
+              <h5>Innovative</h5>
+              <small>
+                Being enthusiastic to try new things and gain new skills drives
+                for a creative approach to problem solving.
+              </small>
             </article>
             <article className="about__card">
-              <FaRegFolderOpen className="about__icon" />
-              <h5>Projects</h5>
-              <small>Completed Projects</small>
+              <BiPaint className="about__icon" />
+              <h5>Creative</h5>
+              <small>
+                Passionate about creating and designing something that is not
+                only functional but beautiful.
+              </small>
+            </article>
+            <article className="about__card">
+              <BsMegaphone className="about__icon" />
+              <h5>Excellent Communicator</h5>
+              <small>
+                Effective communication is essential for managing great
+                relationships and working within a team.
+              </small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ab
-            nemo nisi a adipisci? Illo blanditiis asperiores unde corporis
-            dignissimos, magni quasi obcaecati provident explicabo consequuntur?
-            Labore voluptatum minus cumque!
+            Innovative, task-driven Junior Software Developer looking to pursue
+            a successful new career in the technical sector. Currently enrolled
+            on the CodeClan Professional Software Development course continuing
+            my learning of the most in-demand software and web development
+            skills.
+          </p>
+          <p>
+            The idea that something I create can impact someone across the world
+            now, or in the future is what drives my passion for technology.
           </p>
 
           <a href="#contact" className="btn btn-primary">
