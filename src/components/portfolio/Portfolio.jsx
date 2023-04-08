@@ -1,7 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
 import IMG1 from '../../assets/portfolio1.jpg';
-import IMG2 from '../../assets/atlas_wealth.screenshot.png';
+import IMG2 from '../../assets/atlas_project_mockup.jpg';
 
 const data = [
   {
