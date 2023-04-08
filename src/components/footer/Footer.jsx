@@ -7,12 +7,13 @@ import { BsInstagram } from 'react-icons/bs';
 const Footer = () => {
   return (
     <footer>
+      {/* eslint-disable-next-line */}
       <a href="#" className="footer__logo">
         RA CONDIE
       </a>
-
       <ul className="permalinks">
         <li>
+          {/* eslint-disable-next-line */}
           <a href="#">Home</a>
         </li>
         <li>
@@ -34,7 +35,6 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-
       <div className="footer__socials">
         <a href="https://github.com">
           <BsGithub />
