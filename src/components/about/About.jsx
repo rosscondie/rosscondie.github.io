@@ -54,22 +54,6 @@ const About = () => {
               </small>
             </article>
           </div>
-
-          <p>
-            Innovative, task-driven Junior Software Developer looking to pursue
-            a successful new career in the technical sector. Currently enrolled
-            on the CodeClan Professional Software Development course continuing
-            my learning of the most in-demand software and web development
-            skills.
-          </p>
-          <p>
-            The idea that something I create can impact someone across the world
-            now, or in the future is what drives my passion for technology.
-          </p>
-
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
         </div>
       </div>
     </section>

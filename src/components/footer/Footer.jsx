@@ -36,18 +36,18 @@ const Footer = () => {
         </li>
       </ul>
       <div className="footer__socials">
-        <a href="https://github.com">
+        <a href="https://github.com/rosscondie">
           <BsGithub />
         </a>
-        <a href="https://linkedin.com">
+        <a href="https://linkedin.com/in/rosscondie">
           <BsLinkedin />
         </a>
-        <a href="https://instagram.com">
+        <a href="https://instagram.com/rosscondie">
           <BsInstagram />
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Ross Condie. All Rights Reserved.</small>
+        <small>&copy; Ross Condie</small>
       </div>
     </footer>
   );

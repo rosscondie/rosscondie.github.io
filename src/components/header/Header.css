@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 2rem;
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@ header {
 /* ==== CTA ==== */
 
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -31,7 +31,7 @@ header {
   bottom: 3rem;
 }
 
-.header__socials:after {
+.header__socials::after {
   content: '';
   width: 1px;
   height: 2rem;
@@ -46,15 +46,15 @@ header {
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
-  margin-top: 4rem;
+  margin-top: 2rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 /* ==== SCROLL DOWN ==== */
 
-.scroll_down {
+.scroll__down {
   position: absolute;
   right: -2.3rem;
   bottom: 5rem;
@@ -75,7 +75,8 @@ header {
     height: 100vh;
   }
 
-  .scroll_down {
+  .header__socials,
+  .scroll__down {
     display: none;
   }
 }

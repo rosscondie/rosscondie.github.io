@@ -24,10 +24,20 @@
 
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
+  text-align: center;
+  margin: 1rem 0 0 0;
 }
 
+.portfolio__item h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-light);
+}
+/* ==== ONCE YOU ADD A DEMO BUTTON REMOVE THE CENTER JUSTIFY CONTENT ==== */
 .portfolio__item-cta {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
 }
