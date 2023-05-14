@@ -2,15 +2,16 @@ import React from 'react';
 import './Portfolio.css';
 import IMG1 from '../../assets/portfolio1.png';
 import IMG2 from '../../assets/portfolio2.png';
+import { Video } from '../video/Video';
 
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: 'Fugitive Travel',
+    isVideo: true,
+    title: 'Uber Clone',
     summary:
-      'Bucket list app to track travel adventures. Solo project built with Python, HTML, CSS, Flask & PostrgreSQL',
-    github: 'https://github.com/rosscondie/Python_Flask_Project',
+      'Uber Clone mobile app. Paired project built with JavaScript, React Native, Redux, React Navigation, React Maps & Tailwind CSS',
+    github: 'https://github.com/rosscondie/UberClone_Capstone',
     demo: '',
   },
   {
@@ -22,6 +23,15 @@ const data = [
     github: 'https://github.com/rosscondie/Atlas_Wealth_Group_Project',
     demo: '',
   },
+  {
+    id: 3,
+    image: IMG1,
+    title: 'Fugitive Travel',
+    summary:
+      'Bucket list app to track travel adventures. Solo project built with Python, HTML, CSS, Flask & PostrgreSQL',
+    github: 'https://github.com/rosscondie/Python_Flask_Project',
+    demo: '',
+  },
 ];
 
 const Portfolio = () => {
@@ -30,11 +40,11 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo, summary }) => {
+        {data.map(({ id, image, title, github, demo, summary, isVideo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+                {isVideo ? <Video /> : <img src={image} alt={title} />}
                 <h3>{title}</h3>
                 <h4>{summary}</h4>
                 <div className="portfolio__item-cta">
