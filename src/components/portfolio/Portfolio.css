@@ -48,7 +48,7 @@
 /* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 1.2rem;
   }
 }
@@ -57,5 +57,20 @@
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio__item {
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+  }
+
+  .portfolio__item h3 {
+    margin-top: 1rem;
+  }
+
+  .portfolio__item h4 {
+    margin-bottom: 0.8rem;
   }
 }
