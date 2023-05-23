@@ -39,6 +39,9 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(../src/assets/bg-texture.png);
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: top;
 }
 
 /* ===== GENERAL STYLES ===== */
@@ -134,5 +137,8 @@ img {
   }
   section > h2 {
     margin-bottom: 2rem;
+  }
+  body {
+    background-size: cover;
   }
 }
