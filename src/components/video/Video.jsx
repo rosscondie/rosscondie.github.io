@@ -9,7 +9,7 @@ export const Video = () => {
         height="200"
         src="https://www.youtube.com/embed/591Hzn0-AJU"
         title="YouTube video player"
-        frameborder="0"
+        sandbox="allow-same-origin allow-scripts"
         allowFullScreen
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       ></iframe>
