@@ -2,6 +2,7 @@ import React from 'react';
 import './Portfolio.css';
 import IMG1 from '../../assets/portfolio1.png';
 import IMG2 from '../../assets/portfolio2.png';
+import IMG3 from '../../assets/portfolio3.png';
 import { Video } from '../video/Video';
 
 const data = [
@@ -16,6 +17,15 @@ const data = [
   },
   {
     id: 2,
+    image: IMG3,
+    title: 'Personal Portfolio',
+    summary:
+      'This website! I built this using JavaScript, React and CSS. I learned about responsive design using media queries and how to deploy my application with Github pages.',
+    github: 'https://github.com/rosscondie/rosscondie.github.io',
+    demo: '',
+  },
+  {
+    id: 3,
     image: IMG2,
     title: 'Atlas Wealth',
     summary:
@@ -24,7 +34,7 @@ const data = [
     demo: '',
   },
   {
-    id: 3,
+    id: 4,
     image: IMG1,
     title: 'Fugitive Travel',
     summary:
