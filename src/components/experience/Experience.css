@@ -4,6 +4,10 @@
   gap: 2rem;
 }
 
+#experience {
+  margin-top: 3rem;
+}
+
 .experience__container > div {
   background: var(--color-bg-variant);
   padding: 2.4rem 5rem;
@@ -38,6 +42,21 @@
 .experience__details-icon {
   margin-top: 6px;
   color: var(--color-primary);
+}
+
+.currently {
+  color: var(--color-white);
+}
+
+.devicons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+i {
+  font-size: 8rem;
+  padding: 1rem;
 }
 
 /* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */
