@@ -11,12 +11,17 @@ const Description = () => {
           and work experience, I bring a unique perspective to my development
           work that can help create innovative solutions that make a difference.
           <br />
-          Currently enrolled on the{' '}
+          <br />
+          This perspective drives me to consistently improve, while my
+          persistent attention to detail ensures meticulousness in my approach.
+          <br />
+          <br />
+          Recently graduated from the{' '}
           <a href="https://codeclan.com/courses/professional-software-development/">
             CodeClan
           </a>{' '}
-          Professional Software Development course continuing my learning of the
-          most in-demand software and web development skills.
+          Professional Software Development course learning the most in-demand
+          software and web development skills.
           <br />
           <br />
           My passion for technology drives me to create meaningful and impactful
