@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.63c7b8f3.css",
-    "main.js": "/static/js/main.8801ada5.js",
+    "main.css": "/static/css/main.a9a7a628.css",
+    "main.js": "/static/js/main.aff93d5b.js",
     "static/media/bg-texture-neon.jpg": "/static/media/bg-texture-neon.fb186a17285fad364805.jpg",
     "static/media/portfolio1.png": "/static/media/portfolio1.757f5242a4d5fe5c12ce.png",
     "static/media/me-about.jpg": "/static/media/me-about.7341c08f57edfa21540d.jpg",
     "static/media/ross_condie_junior_developer_cv.pdf": "/static/media/ross_condie_junior_developer_cv.78ad1a999a79731b4d3f.pdf",
     "static/media/me.png": "/static/media/me.dbcab1348b727a6b2884.png",
     "static/media/portfolio2.png": "/static/media/portfolio2.44d32d895813c2ac7b54.png",
+    "static/media/portfolio3.png": "/static/media/portfolio3.d36a826bb97aa3ae4ea1.png",
     "index.html": "/index.html",
-    "main.63c7b8f3.css.map": "/static/css/main.63c7b8f3.css.map",
-    "main.8801ada5.js.map": "/static/js/main.8801ada5.js.map"
+    "main.a9a7a628.css.map": "/static/css/main.a9a7a628.css.map",
+    "main.aff93d5b.js.map": "/static/js/main.aff93d5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.63c7b8f3.css",
-    "static/js/main.8801ada5.js"
+    "static/css/main.a9a7a628.css",
+    "static/js/main.aff93d5b.js"
   ]
 }
