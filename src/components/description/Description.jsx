@@ -7,10 +7,10 @@ const Description = () => {
     <section>
       <div className="container description__container">
         <h3>
-          Driven Junior Developer committed to advancing my skills and taking on
-          new challenges in the technical sector. With a diverse range of life
-          and work experience, I bring a unique perspective to my development
-          work that can help create innovative solutions that make a difference.
+          Driven engineer committed to advancing my skills and taking on new
+          challenges in the technical sector. With a diverse range of life and
+          work experience, I bring a unique perspective to my development work
+          that can help create innovative solutions that make a difference.
           <br />
           <br />
           This perspective drives me to consistently improve, while my
