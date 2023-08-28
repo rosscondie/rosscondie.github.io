@@ -1,5 +1,6 @@
 import React from 'react';
 import './Description.css';
+import CCSYLLABUS from '../../assets/code_clan_syllabus_psd.pdf';
 
 const Description = () => {
   return (
@@ -16,10 +17,7 @@ const Description = () => {
           persistent attention to detail ensures meticulousness in my approach.
           <br />
           <br />
-          Recently graduated from the{' '}
-          <a href="https://codeclan.com/courses/professional-software-development/">
-            CodeClan
-          </a>{' '}
+          Recent graduate from the <a href={CCSYLLABUS}>CodeClan</a>{' '}
           Professional Software Development course learning the most in-demand
           software and web development skills.
           <br />

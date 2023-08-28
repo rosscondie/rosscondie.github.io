@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container header__container">
         <h4>Hello I'm</h4>
         <h1>Ross Condie</h1>
-        <h5 className="text-light">Junior Software Developer</h5>
+        <h5 className="text-light">Junior Full-Stack Engineer</h5>
         <CTA />
         <div className="me">
           {/* img src should be src={ME} */}
