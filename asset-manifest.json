@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.ada9395f.css",
-    "main.js": "/static/js/main.725b317e.js",
+    "main.js": "/static/js/main.fc371018.js",
     "static/media/bg-background.jpeg": "/static/media/bg-background.a3b868aa919b6f1aff7c.jpeg",
+    "static/media/code_clan_syllabus_psd.pdf": "/static/media/code_clan_syllabus_psd.e91b5bdf820abf285dcb.pdf",
     "static/media/portfolio1.png": "/static/media/portfolio1.757f5242a4d5fe5c12ce.png",
     "static/media/me-about.jpg": "/static/media/me-about.7341c08f57edfa21540d.jpg",
-    "static/media/ross_condie_junior_developer_cv.pdf": "/static/media/ross_condie_junior_developer_cv.e338e58096003351fd29.pdf",
+    "static/media/ross_condie_junior_fullstack_engineer_cv.pdf": "/static/media/ross_condie_junior_fullstack_engineer_cv.dfcd2db59946e3ddb3e1.pdf",
     "static/media/portfolio3.png": "/static/media/portfolio3.5af7b2d01e2db18c9ac8.png",
     "static/media/me.png": "/static/media/me.dbcab1348b727a6b2884.png",
     "static/media/portfolio2.png": "/static/media/portfolio2.44d32d895813c2ac7b54.png",
     "index.html": "/index.html",
     "main.ada9395f.css.map": "/static/css/main.ada9395f.css.map",
-    "main.725b317e.js.map": "/static/js/main.725b317e.js.map"
+    "main.fc371018.js.map": "/static/js/main.fc371018.js.map"
   },
   "entrypoints": [
     "static/css/main.ada9395f.css",
-    "static/js/main.725b317e.js"
+    "static/js/main.fc371018.js"
   ]
 }
