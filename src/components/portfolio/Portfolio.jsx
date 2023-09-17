@@ -3,11 +3,21 @@ import './Portfolio.css';
 import IMG1 from '../../assets/portfolio1.png';
 import IMG2 from '../../assets/portfolio2.png';
 import IMG3 from '../../assets/portfolio3.png';
+import IMG4 from '../../assets/portfolio4.png';
 import { Video } from '../video/Video';
 
 const data = [
   {
     id: 1,
+    image: IMG4,
+    title: 'Digital Business Card',
+    summary:
+      'Digital Business Card built with React using Vite as a devlopment server and deployed it using Netlify.',
+    github: 'https://github.com/rosscondie/d_b_card',
+    demo: 'https://rcondie.netlify.app/',
+  },
+  {
+    id: 2,
     isVideo: true,
     title: 'Uber Clone',
     summary:
@@ -16,7 +26,7 @@ const data = [
     demo: '',
   },
   {
-    id: 2,
+    id: 3,
     image: IMG3,
     title: 'Personal Portfolio',
     summary:
@@ -25,7 +35,7 @@ const data = [
     demo: '',
   },
   {
-    id: 3,
+    id: 4,
     image: IMG2,
     title: 'Atlas Wealth',
     summary:
@@ -34,7 +44,7 @@ const data = [
     demo: '',
   },
   {
-    id: 4,
+    id: 5,
     image: IMG1,
     title: 'Fugitive Travel',
     summary:
@@ -66,14 +76,17 @@ const Portfolio = () => {
                   >
                     Github
                   </a>
-                  {/* <a
-                    href={demo}
-                    className="btn btn-primary"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live Demo
-                  </a> */}
+                  {/* if demo link exists then show live demo button */}
+                  {demo ? (
+                    <a
+                      href={demo}
+                      className="btn btn-primary"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </article>
