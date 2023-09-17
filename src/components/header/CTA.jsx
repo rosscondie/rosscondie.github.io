@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../assets/ross_condie_junior_fullstack_engineer_cv.pdf';
+import CV from '../../assets/ross_condie_software_engineer_cv.pdf';
 
 const CTA = () => {
   const openCV = () => {
