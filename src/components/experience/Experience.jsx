@@ -5,13 +5,13 @@ import { BsPatchCheckFill } from 'react-icons/bs';
 const Experience = () => {
   return (
     <section id="experience">
-      <h2 className="currently">
+      {/* <h2 className="currently">
         I am currently learning Typescript and Next.js
       </h2>
       <div className="devicons">
         <i class="devicon-typescript-plain colored"></i>
         <i class="devicon-nextjs-original"></i>
-      </div>
+      </div> */}
       <h5>Technologies I Have Used So Far...</h5>
       <h2>My Experience</h2>
 
