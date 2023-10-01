@@ -11,3 +11,14 @@
   display: flex;
   justify-content: center;
 }
+
+.devicons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+i {
+  font-size: 4rem;
+  padding: 1rem;
+}
