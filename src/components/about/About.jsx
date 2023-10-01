@@ -1,10 +1,5 @@
 import React from 'react';
 import './About.css';
-import ME from '../../assets/me-about.jpg';
-import { FaPeopleCarry } from 'react-icons/fa';
-import { HiOutlineLightBulb } from 'react-icons/hi';
-import { BiPaint } from 'react-icons/bi';
-import { BsMegaphone } from 'react-icons/bs';
 
 const About = () => {
   return (
