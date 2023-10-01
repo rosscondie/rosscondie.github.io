@@ -1,3 +1,7 @@
+.about__me__h2 {
+  margin: auto;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;

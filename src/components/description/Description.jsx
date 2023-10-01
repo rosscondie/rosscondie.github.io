@@ -4,7 +4,7 @@ import CCSYLLABUS from '../../assets/code_clan_syllabus_psd.pdf';
 
 const Description = () => {
   return (
-    <section>
+    <section className="description__section">
       <div className="container description__container">
         <h3>
           Driven engineer committed to advancing my skills and taking on new

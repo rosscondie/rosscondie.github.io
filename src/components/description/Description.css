@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.description__section {
+  margin: 2rem;
+}
+
 .button__container {
   padding-top: 2rem;
   display: flex;

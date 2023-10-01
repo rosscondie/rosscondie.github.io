@@ -5,18 +5,6 @@ import { BsPatchCheckFill } from 'react-icons/bs';
 const Experience = () => {
   return (
     <section id="experience">
-      <h2 className="currently">
-        I am currently learning Typescript and Next.js working on a project made
-        by{' '}
-        <a href="https://www.linkedin.com/in/peter-trizuliak/">
-          Peter Trizuliak
-        </a>{' '}
-        called <a href="https://autonews.io/">Autonews.io</a>.
-      </h2>
-      <div className="devicons">
-        <i class="devicon-typescript-plain colored"></i>
-        <i class="devicon-nextjs-original"></i>
-      </div>
       <h5>Technologies I Have Used So Far...</h5>
       <h2>My Experience</h2>
 
