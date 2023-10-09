@@ -45,12 +45,6 @@ const Description = () => {
             <i class="devicon-nextjs-original"></i>
           </div>
         </h3>
-
-        <div className="container button__container">
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
-        </div>
       </div>
     </section>
   );
