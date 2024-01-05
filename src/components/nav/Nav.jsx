@@ -3,7 +3,7 @@ import './Nav.css';
 import { IoHome } from 'react-icons/io5';
 import { FaUserAlt } from 'react-icons/fa';
 import { ImBook } from 'react-icons/im';
-import { FaBriefcase } from 'react-icons/fa';
+// import { FaBriefcase } from 'react-icons/fa';
 import { MdMessage } from 'react-icons/md';
 import { useState } from 'react';
 
@@ -34,13 +34,13 @@ const Nav = () => {
       >
         <ImBook />
       </a>
-      <a
+      {/* <a
         href="#portfolio"
         onClick={() => setActiveNav('#portfolio')}
         className={activeNav === '#portfolio' ? 'active' : ''}
       >
         <FaBriefcase />
-      </a>
+      </a> */}
       <a
         href="#contact"
         onClick={() => setActiveNav('#contact')}

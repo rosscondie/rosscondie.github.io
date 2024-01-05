@@ -3,12 +3,12 @@ import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
-import Services from './components/services/Services';
-import Portfolio from './components/portfolio/Portfolio';
-import Testimonials from './components/testimonials/Testimonials';
+// import Services from './components/services/Services';
+// import Portfolio from './components/portfolio/Portfolio';
+// import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import Hobbies from './components/hobbies/Hobbies';
+// import Hobbies from './components/hobbies/Hobbies';
 import Description from './components/description/Description';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
       <Description />
       <Experience />
       {/* <Services /> */}
-      <Portfolio />
+      {/* <Portfolio /> */}
       {/* <Hobbies /> */}
       {/* <Testimonials /> */}
       <Contact />

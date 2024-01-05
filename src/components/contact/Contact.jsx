@@ -2,7 +2,6 @@ import React from 'react';
 import './Contact.css';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsLinkedin } from 'react-icons/bs';
-import { BsWhatsapp } from 'react-icons/bs';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -44,17 +43,6 @@ const Contact = () => {
 
             <a
               href="https://www.linkedin.com/in/rosscondie"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>Whatsapp</h4>
-            <a
-              href="https://api.whatsapp.com/send?phone=+4915129602494"
               target="_blank"
               rel="noreferrer"
             >
