@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b274348c.css",
-    "main.js": "/static/js/main.9d9b7bda.js",
+    "main.css": "/static/css/main.cb77102c.css",
+    "main.js": "/static/js/main.262aa154.js",
     "static/media/bg-background.jpeg": "/static/media/bg-background.a3b868aa919b6f1aff7c.jpeg",
-    "static/media/portfolio4.png": "/static/media/portfolio4.3662d8bdde7c72ee309f.png",
     "static/media/code_clan_syllabus_psd.pdf": "/static/media/code_clan_syllabus_psd.e91b5bdf820abf285dcb.pdf",
-    "static/media/portfolio1.png": "/static/media/portfolio1.757f5242a4d5fe5c12ce.png",
-    "static/media/portfolio3.png": "/static/media/portfolio3.5af7b2d01e2db18c9ac8.png",
     "static/media/me.png": "/static/media/me.dbcab1348b727a6b2884.png",
-    "static/media/portfolio2.png": "/static/media/portfolio2.44d32d895813c2ac7b54.png",
     "index.html": "/index.html",
-    "main.b274348c.css.map": "/static/css/main.b274348c.css.map",
-    "main.9d9b7bda.js.map": "/static/js/main.9d9b7bda.js.map"
+    "main.cb77102c.css.map": "/static/css/main.cb77102c.css.map",
+    "main.262aa154.js.map": "/static/js/main.262aa154.js.map"
   },
   "entrypoints": [
-    "static/css/main.b274348c.css",
-    "static/js/main.9d9b7bda.js"
+    "static/css/main.cb77102c.css",
+    "static/js/main.262aa154.js"
   ]
 }
