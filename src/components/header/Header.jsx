@@ -21,9 +21,6 @@ const Header = () => {
           <span className="output-result">Software Developer</span>
         </div>
         <CTA />
-        <div className="header__visual">
-          <code>&lt;/&gt;</code>
-        </div>
         <HeaderSocials />
 
         <a href="#contact" className="scroll__down">
