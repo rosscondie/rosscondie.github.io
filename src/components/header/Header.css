@@ -105,9 +105,12 @@ header {
   font-family: 'Ubuntu Mono', monospace;
   text-align: left;
   display: inline-block;
+}
+
+.delayed-output {
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
-  animation-delay: 1s;
+  animation-delay: 2.5s;
 }
 
 @keyframes typing {
@@ -130,8 +133,9 @@ header {
   border-right: .15em solid var(--color-primary);
   white-space: nowrap;
   margin: 0;
+  width: 0;
   animation: 
-    typing 2s steps(40, end),
+    typing 1.5s steps(20, end) forwards,
     blink .75s step-end infinite;
 }
 

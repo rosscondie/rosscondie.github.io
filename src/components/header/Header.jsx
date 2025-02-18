@@ -15,12 +15,12 @@ const Header = () => {
             <span className="prompt-colon">:</span>
             <span className="prompt-path">~</span>
             <span className="prompt-symbol">$</span>
-            <span className="command"> go run hello.go</span>
+            <span className="command typing-animation"> go run hello.go</span>
           </div>
           <div className="terminal-output">
-            <span className="output-text">
-              <span className="go-fmt typing-animation">fmt.Println</span>(
-              <span className="go-string typing-animation">
+            <span className="output-text delayed-output">
+              <span className="go-fmt">fmt.Println</span>(
+              <span className="go-string">
                 "Hello World!, I'm Ross Condie 👋 and I'm a Software Developer"
               </span>
               )
