@@ -5,17 +5,23 @@ header {
 }
 
 .header__container {
-  text-align: left;
+  text-align: center;
   height: 100%;
   position: relative;
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .terminal-prompt {
   font-family: 'Ubuntu Mono', monospace;
   margin-bottom: 1rem;
+  display: inline-block;
+  text-align: left;
 }
 
 .prompt-user {
@@ -44,7 +50,8 @@ header {
 
 .terminal-output {
   font-family: 'Ubuntu Mono', monospace;
-  margin-left: 1rem;
+  text-align: left;
+  display: inline-block;
 }
 
 .output-text {
