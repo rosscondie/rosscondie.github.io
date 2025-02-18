@@ -8,6 +8,10 @@ const Header = () => {
     <header>
       <div className="container header__container">
         <div className="terminal-window">
+          <div className="terminal-output">
+            <span className="output-text">fmt.Println("Hello, I'm Ross Condie")</span>
+            <span className="output-result">Software Developer</span>
+          </div>
           <div className="terminal-prompt">
             <span className="prompt-user">user</span>
             <span className="prompt-separator">@</span>
@@ -16,10 +20,6 @@ const Header = () => {
             <span className="prompt-path">~</span>
             <span className="prompt-symbol">$</span>
             <span className="command"> go run hello.go</span>
-          </div>
-          <div className="terminal-output">
-            <span className="output-text">fmt.Println("Hello, I'm Ross Condie")</span>
-            <span className="output-result">Software Developer</span>
           </div>
         </div>
         <CTA />
