@@ -36,12 +36,6 @@ const Experience = () => {
                 <h4>React</h4>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Next.js</h4>
-              </div>
-            </article>
           </div>
         </div>
         {/* END OF FRONTEND */}
@@ -78,7 +72,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Express JS</h4>
+                <h4>Go</h4>
               </div>
             </article>
             <article className="experience__details">
