@@ -8,14 +8,14 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
-  padding: 2rem;
+  padding: 3rem 2rem;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .neofetch-window {
@@ -159,7 +159,6 @@ header {
 /* ==== CTA ==== */
 
 .cta {
-  margin-top: 2rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
