@@ -9,12 +9,12 @@ const Header = () => {
       <div className="container header__container">
         <div className="neofetch-window">
           <div className="neofetch-logo">
-            {`    ______      
-   / ____/___  
-  / /   / __ \\ 
- / /___/ /_/ / 
- \\____/\\____/  
-              `}
+            {` ┌────────┐
+ │  ^  ^  │
+ │  (oo)  │
+ │  \\__/  │
+ └────────┘
+           `}
           </div>
           <div className="neofetch-info">
             <div className="neofetch-info-line">
