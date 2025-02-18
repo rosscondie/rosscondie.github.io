@@ -15,8 +15,6 @@ const Header = () => {
             <span className="prompt-colon">:</span>
             <span className="prompt-path">~</span>
             <span className="prompt-symbol">$</span>
-          </div>
-          <div className="terminal-prompt">
             <span className="command typing-animation">go run hello.go</span>
           </div>
           <div className="terminal-output">

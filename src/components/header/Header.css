@@ -73,8 +73,9 @@ header {
 .terminal-prompt {
   font-family: 'Ubuntu Mono', monospace;
   margin-bottom: 1rem;
-  display: inline-block;
+  display: flex;
   text-align: left;
+  align-items: center;
 }
 
 .prompt-user {
