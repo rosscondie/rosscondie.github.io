@@ -1,16 +1,14 @@
-import React from 'react';
-import './Footer.css';
-import { BsGithub } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
+import React from "react";
+import "./Footer.css";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <footer>
       {/* eslint-disable-next-line */}
-      <a href="#" className="footer__logo">
-        RA CONDIE
-      </a>
+
       <ul className="permalinks">
         <li>
           {/* eslint-disable-next-line */}
