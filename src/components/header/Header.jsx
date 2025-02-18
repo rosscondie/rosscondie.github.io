@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container header__container">
         <div className="terminal-window">
           <div className="terminal-output">
-            <span className="output-text">fmt.Println("Hello, I'm Ross Condie")</span>
+            <span className="output-text">fmt.Println("Hello, I'm Ross Condie 👋")</span>
             <span className="output-result">Software Developer</span>
           </div>
           <div className="terminal-prompt">
