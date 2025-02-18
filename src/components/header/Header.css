@@ -5,9 +5,58 @@ header {
 }
 
 .header__container {
-  text-align: center;
+  text-align: left;
   height: 100%;
   position: relative;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terminal-prompt {
+  font-family: 'Ubuntu Mono', monospace;
+  margin-bottom: 1rem;
+}
+
+.prompt-user {
+  color: var(--color-green);
+}
+
+.prompt-separator, .prompt-colon {
+  color: var(--color-white);
+}
+
+.prompt-host {
+  color: var(--color-purple);
+}
+
+.prompt-path {
+  color: var(--color-cyan);
+}
+
+.prompt-symbol {
+  color: var(--color-white);
+}
+
+.command {
+  color: var(--color-white);
+}
+
+.terminal-output {
+  font-family: 'Ubuntu Mono', monospace;
+  margin-left: 1rem;
+}
+
+.output-text {
+  color: var(--color-pink);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.output-result {
+  color: var(--color-yellow);
+  display: block;
+  margin-left: 1rem;
 }
 
 /* ==== CTA ==== */
