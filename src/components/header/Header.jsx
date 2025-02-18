@@ -7,48 +7,6 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <div className="neofetch-window">
-          <div className="neofetch-logo">
-            {`   ⣠⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣄
- ⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆
- ⢸⣿⣿⣿⣿⡟⠛⠛⠛⠛⠛⠛⠛⢻⣿⣿⣿⣿
- ⢸⣿⣿⣿⣿⣇⣀⣀⣀⣀⣀⣀⣀⣸⣿⣿⣿⣿
- ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏
-   ⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋
-     ⠙⠻⢿⣿⣿⣿⣿⣿⣿⠟⠋
-           `}
-          </div>
-          <div className="neofetch-info">
-            <div className="neofetch-info-line">
-              <span className="neofetch-label">OS:</span>
-              <span className="neofetch-value">Portfolio OS x86_64</span>
-            </div>
-            <div className="neofetch-info-line">
-              <span className="neofetch-label">Host:</span>
-              <span className="neofetch-value">Portfolio Machine</span>
-            </div>
-            <div className="neofetch-info-line">
-              <span className="neofetch-label">Kernel:</span>
-              <span className="neofetch-value">6.1.0-portfolio</span>
-            </div>
-            <div className="neofetch-info-line">
-              <span className="neofetch-label">Shell:</span>
-              <span className="neofetch-value">portfolio-sh 5.1.16</span>
-            </div>
-            <div className="neofetch-info-line">
-              <span className="neofetch-label">DE:</span>
-              <span className="neofetch-value">React 18.2.0</span>
-            </div>
-            <div className="neofetch-info-line">
-              <span className="neofetch-label">WM:</span>
-              <span className="neofetch-value">Vite</span>
-            </div>
-            <div className="neofetch-info-line">
-              <span className="neofetch-label">Terminal:</span>
-              <span className="neofetch-value">portfolio-term</span>
-            </div>
-          </div>
-        </div>
         <div className="terminal-window">
           <div className="terminal-prompt">
             <span className="prompt-user">user</span>
