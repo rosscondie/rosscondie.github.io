@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2922cc1.css",
+    "main.css": "/static/css/main.540210fa.css",
     "main.js": "/static/js/main.908823fa.js",
     "static/media/code_clan_syllabus_psd.pdf": "/static/media/code_clan_syllabus_psd.e91b5bdf820abf285dcb.pdf",
     "index.html": "/index.html",
-    "main.f2922cc1.css.map": "/static/css/main.f2922cc1.css.map",
+    "main.540210fa.css.map": "/static/css/main.540210fa.css.map",
     "main.908823fa.js.map": "/static/js/main.908823fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2922cc1.css",
+    "static/css/main.540210fa.css",
     "static/js/main.908823fa.js"
   ]
 }
