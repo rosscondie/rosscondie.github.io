@@ -14,8 +14,8 @@ const Header = () => {
             <span className="prompt-host">portfolio</span>
             <span className="prompt-colon">:</span>
             <span className="prompt-path">~</span>
-            <span className="prompt-symbol">$ </span>
-            <span className="command typing-animation">go run hello.go</span>
+            <span className="prompt-symbol">$&nbsp;</span>
+            <span className="command typing-animation">&nbsp;go run hello.go</span>
           </div>
           <div className="terminal-output">
             <span className="output-text delayed-output">
