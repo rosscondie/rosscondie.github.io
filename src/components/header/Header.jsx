@@ -19,8 +19,8 @@ const Header = () => {
           </div>
           <div className="terminal-output">
             <span className="output-text">
-              <span className="go-fmt">fmt.Println</span>(
-              <span className="go-string">
+              <span className="go-fmt typing-animation">fmt.Println</span>(
+              <span className="go-string typing-animation">
                 "Hello World!, I'm Ross Condie 👋 and I'm a Software Developer"
               </span>
               )
