@@ -130,13 +130,10 @@ header {
 .typing-animation {
   display: inline-block;
   overflow: hidden;
-  border-right: .15em solid var(--color-primary);
   white-space: nowrap;
   margin: 0;
   width: 0;
-  animation: 
-    typing 1.5s steps(20, end) forwards,
-    blink .75s step-end infinite;
+  animation: typing 1.5s steps(20, end) forwards;
 }
 
 .output-text {
