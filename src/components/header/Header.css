@@ -64,9 +64,16 @@ header {
 }
 
 .output-text {
-  color: var(--color-pink);
   display: block;
   margin-bottom: 0.5rem;
+}
+
+.output-text .go-fmt {
+  color: var(--color-cyan);
+}
+
+.output-text .go-string {
+  color: var(--color-yellow);
 }
 
 .output-result {
