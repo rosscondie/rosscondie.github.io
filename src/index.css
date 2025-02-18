@@ -12,12 +12,20 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-bg: #282a36;
+  --color-bg-variant: #44475a;
+  --color-primary: #bd93f9;
+  --color-primary-variant: #ff79c6;
+  --color-white: #f8f8f2;
+  --color-light: rgba(248, 248, 242, 0.8);
+  --color-comment: #6272a4;
+  --color-cyan: #8be9fd;
+  --color-green: #50fa7b;
+  --color-orange: #ffb86c;
+  --color-pink: #ff79c6;
+  --color-purple: #bd93f9;
+  --color-red: #ff5555;
+  --color-yellow: #f1fa8c;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -36,7 +44,7 @@ html {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background: blue;
+  background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
 
