@@ -1,7 +1,7 @@
-import React from 'react';
-import CTA from './CTA';
-import './Header.css';
-import HeaderSocials from './HeaderSocials';
+import React from "react";
+import CTA from "./CTA";
+import "./Header.css";
+import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
   return (
@@ -18,7 +18,10 @@ const Header = () => {
             <span className="command"> go run hello.go</span>
           </div>
           <div className="terminal-output">
-            <span className="output-text">fmt.Println("Hello, I'm Ross Condie 👋 and I am a Software Developer")</span>
+            <span className="output-text">
+              fmt.Println("Hello, I'm Ross Condie 👋 and I'm a Software
+              Developer")
+            </span>
           </div>
         </div>
         <CTA />
