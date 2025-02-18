@@ -36,7 +36,7 @@ html {
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background: black;
+  background: blue;
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(../src/assets/bg-background.jpeg);
