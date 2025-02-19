@@ -159,8 +159,23 @@ header {
 .header__socials {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.header__socials::before {
+  content: '';
+  width: 4rem;
+  height: 1px;
+  background: var(--color-primary);
+}
+
+.header__socials::after {
+  content: '';
+  width: 4rem;
+  height: 1px;
+  background: var(--color-primary);
 }
 
 /* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */
