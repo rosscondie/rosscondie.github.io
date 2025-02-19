@@ -29,10 +29,6 @@ const Header = () => {
         </div>
         <CTA />
         <HeaderSocials />
-
-        <a href="#contact" className="scroll__down">
-          Scroll Down
-        </a>
       </div>
     </header>
   );
