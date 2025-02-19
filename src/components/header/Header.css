@@ -18,6 +18,13 @@ header {
   gap: 0.5rem;
 }
 
+.dev-symbol {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
 .neofetch-window {
   background: var(--color-bg-variant);
   border: 1px solid var(--color-comment);

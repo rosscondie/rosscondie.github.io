@@ -7,6 +7,7 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
+        <div className="dev-symbol">&lt;/&gt;</div>
         <div className="terminal-window">
           <div className="terminal-prompt">
             <span className="prompt-user">user</span>
