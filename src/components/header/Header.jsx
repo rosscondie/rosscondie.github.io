@@ -23,7 +23,6 @@ const Header = () => {
             </span>
           </div>
         </div>
-        <CTA />
         <HeaderSocials />
       </div>
     </header>
