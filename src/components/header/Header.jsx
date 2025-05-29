@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <div className="terminal-output">
             <span className="output-text delayed-output">
-              <span className="go-string">Hello World!, I'm Ross Condie 👋 and I'm a Software Developer</span>
+              <span className="go-string">Not a 10x developer. Just someone who reads error messages and Googles well.</span>
             </span>
           </div>
         </div>
