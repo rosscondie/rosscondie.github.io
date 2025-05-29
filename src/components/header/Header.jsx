@@ -20,10 +20,11 @@ const Header = () => {
           </div>
           <div className="terminal-output">
             <span className="output-text delayed-output">
-              <span className="go-string">Not a 10x developer. Just someone who reads error messages and Googles well.</span>
+              <span className="go-string">👋 Hello I'm Ross</span>
             </span>
           </div>
         </div>
+        <span>Not a 10x developer. Just someone who reads error messages and Googles well.</span>
         <HeaderSocials />
       </div>
     </header>
