@@ -24,8 +24,9 @@ const Header = () => {
             </span>
           </div>
         </div>
-        <span>Not a 10x developer. Just someone who reads error messages and Googles well.</span>
         <HeaderSocials />
+        <span>Not a 10x developer.</span>
+        <span>Just someone who reads error messages and Googles well.</span>
       </div>
     </header>
   );

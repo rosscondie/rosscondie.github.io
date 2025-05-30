@@ -7,11 +7,8 @@ const Description = () => {
         <section className="description__section">
         <div className="container description__container">
         <h3>
-        Junior Software Developer @{" "}
+        Software Developer @{" "}
         <a href="https://www.vier.ai/">VIER GmbH</a>
-        <br />
-        Previously completed a Backend Engineering Internship @{" "}
-        <a href="https://www.rebuy.de/">rebuy recommerce GmbH</a>
         <br />
         </h3>
         <br />
@@ -20,7 +17,7 @@ const Description = () => {
         practical applications in software development.
         <br />
         <br />
-        When I’m not coding, I’m chasing the perfect latte art tulip—though let’s be honest, it usually looks more like a confused leaf.
+        When I’m not coding, I’m chasing the perfect latte art tulip although let’s be honest, it usually looks more like a confused leaf.
         Also dabbling in digital and analog photography. 
         </h3>
         </div>
