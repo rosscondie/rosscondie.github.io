@@ -19,7 +19,7 @@ header {
 }
 
 .dev-symbol {
-  color: var(--color-primary);
+  color: var(--color-orange);
   font-size: 2rem;
   margin-bottom: 1rem;
   font-family: "Ubuntu Mono", monospace;
@@ -177,14 +177,14 @@ header {
   content: "";
   width: 4rem;
   height: 1px;
-  background: var(--color-primary);
+  background: var(--color-green);
 }
 
 .header__socials::after {
   content: "";
   width: 4rem;
   height: 1px;
-  background: var(--color-primary);
+  background: var(--color-green);
 }
 
 /* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */

@@ -9,21 +9,20 @@
 }
 
 :root {
-    --color-bg: #282a36;
-    --color-bg-variant: #44475a;
-    --color-primary: #bd93f9;
-    --color-primary-variant: #ff79c6;
-    --color-white: #f8f8f2;
-    --color-light: rgba(248, 248, 242, 0.8);
-    --color-comment: #6272a4;
-    --color-cyan: #8be9fd;
-    --color-green: #50fa7b;
-    --color-orange: #ffb86c;
-    --color-pink: #ff79c6;
-    --color-purple: #bd93f9;
-    --color-red: #ff5555;
-    --color-yellow: #f1fa8c;
-
+  --color-bg: #1a1b26;            /* dark navy background */
+  --color-bg-variant: #16161e;    /* even darker */
+  --color-primary: #7aa2f7;       /* soft blue */
+  --color-primary-variant: #ad8ee6; /* purple-ish */
+  --color-white: #c0caf5;         /* light periwinkle */
+  --color-light: rgba(192, 202, 245, 0.8);
+  --color-comment: #565f89;       /* muted blue-grey */
+  --color-cyan: #7dcfff;          /* bright cyan */
+  --color-green: #9ece6a;         /* mellow green */
+  --color-orange: #f7768e;        /* warm pink/red */
+  --color-pink: #f7768e;          /* same as orange for consistency */
+  --color-purple: #9d7cd8;        /* lavender purple */
+  --color-red: #f7768e;           /* same pinkish red */
+  --color-yellow: #e0af68;        /* soft yellow */
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
@@ -86,12 +85,12 @@ section > h2 {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-purple);
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--color-white);
+    color: var(--color-orange);
 }
 
 .btn {
