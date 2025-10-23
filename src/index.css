@@ -9,25 +9,47 @@
 }
 
 :root {
-  --color-bg: #1a1b26;            /* dark navy background */
-  --color-bg-variant: #16161e;    /* even darker */
-  --color-primary: #7aa2f7;       /* soft blue */
-  --color-primary-variant: #ad8ee6; /* purple-ish */
-  --color-white: #c0caf5;         /* light periwinkle */
-  --color-light: rgba(192, 202, 245, 0.8);
-  --color-comment: #565f89;       /* muted blue-grey */
-  --color-cyan: #7dcfff;          /* bright cyan */
-  --color-green: #9ece6a;         /* mellow green */
-  --color-orange: #f7768e;        /* warm pink/red */
-  --color-pink: #f7768e;          /* same as orange for consistency */
-  --color-purple: #9d7cd8;        /* lavender purple */
-  --color-red: #f7768e;           /* same pinkish red */
-  --color-yellow: #e0af68;        /* soft yellow */
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+  --color-bg: #2b3339;            /* dark green-grey background */
+  --color-bg-variant: #232a2e;    /* darker variant */
+  --color-primary: #a7c080;       /* soft sage green */
+  --color-primary-variant: #83c092; /* aqua green */
+  --color-white: #d3c6aa;         /* warm light beige */
+  --color-light: rgba(211, 198, 170, 0.8);
+  --color-comment: #859289;       /* muted grey-green */
+  --color-cyan: #83c092;          /* aqua/teal */
+  --color-green: #a7c080;         /* sage green */
+  --color-orange: #e69875;        /* warm orange */
+  --color-pink: #d699b6;          /* dusty pink */
+  --color-purple: #d699b6;        /* same dusty pink */
+  --color-red: #e67e80;           /* soft red */
+  --color-yellow: #dbbc7f;        /* warm yellow */
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: all 400ms ease;
+}
 
-    --transition: all 400ms ease;
+.portfolio-tagline {
+  text-align: center;
+  color: var(--color-comment);
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 0.9rem;
+  margin: 3rem auto 4rem;
+  font-style: italic;
+  max-width: 600px;
+}
+
+.portfolio-tagline a {
+  color: var(--color-cyan);
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-style: normal;
+  border-bottom: 1px dotted var(--color-cyan);
+}
+
+.portfolio-tagline a:hover {
+  color: var(--color-orange);
+  border-bottom-color: var(--color-orange);
 }
 
 html {
