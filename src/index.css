@@ -34,7 +34,7 @@
   color: var(--color-comment);
   font-family: "Ubuntu Mono", monospace;
   font-size: 0.9rem;
-  margin: 3rem auto 4rem;
+  margin: 2rem auto 3rem;
   font-style: italic;
   max-width: 600px;
 }

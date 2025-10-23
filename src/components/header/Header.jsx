@@ -7,6 +7,7 @@ const Header = () => {
 	const [commandHistory, setCommandHistory] = useState([]);
 	const [showInput, setShowInput] = useState(false);
 	const inputRef = useRef(null);
+	const terminalRef = useRef(null); // Add this
 
 	const prompt = {
 		user: "ross",
@@ -25,16 +26,25 @@ const Header = () => {
 		</>
 	);
 
-	// Show interactive input after animations complete
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowInput(true);
-			if (inputRef.current) {
-				inputRef.current.focus();
-			}
 		}, 3200);
 		return () => clearTimeout(timer);
 	}, []);
+
+	// Add separate effect for focusing
+	useEffect(() => {
+		if (showInput && inputRef.current) {
+			inputRef.current.focus();
+		}
+	}, [showInput]);
+
+	useEffect(() => {
+		if (terminalRef.current) {
+			terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+		}
+	}, [commandHistory, showInput]);
 
 	// Focus input when clicking terminal
 	const handleTerminalClick = () => {
@@ -56,7 +66,7 @@ const Header = () => {
 				break;
 			case "cat current_focus.txt":
 			case "cat current_focus":
-				output = "AI tooling, CI/CD automation";
+				output = "Learning about AI tooling and CI/CD automation";
 				break;
 			case "cat bio.txt":
 			case "cat bio":
@@ -74,38 +84,45 @@ const Header = () => {
 				break;
 			case "cat .secrets":
 			case "cat secrets":
-				output = "My latte art is actually really good. Also, yes, I do jiu jitsu. Yes, I know that's the most developer thing ever.";
+				output = "My latte art is actually pretty good."
 				break;
 			case "cat contact.txt":
 			case "cat contact":
 				output = "Reach out via the links below or find me on GitHub.";
 				break;
+
+			// Root directory
 			case "ls":
-			case "ls hobbies":
-			case "ls hobbies/":
+			case "ls -l":
+			case "ls -la":
+			case "ls -a":
 				output = (
 					<span>
-						<span className="file-dir">latte-art/</span>&nbsp;&nbsp;
-						<span className="file-dir">photography/</span>&nbsp;&nbsp;
-						<span className="file-dir">nvim/</span>&nbsp;&nbsp;
+						<span className="file-dir">hobbies/</span>&nbsp;&nbsp;
+						<span className="file-text">bio.txt</span>&nbsp;&nbsp;
+						<span className="file-text">contact.txt</span>&nbsp;&nbsp;
 						<span className="file-hidden">.secrets</span>
 					</span>
 				);
 				break;
-			case "ls -la":
-			case "ls -la hobbies/":
-			case "ls -a":
+
+			// Hobbies directory
+			case "ls hobbies":
+			case "ls hobbies/":
+			case "ls -l hobbies":
+			case "ls -la hobbies":
+			case "ls -a hobbies":
+			case "ls hobbies -la":
+			case "ls hobbies -a":
 				output = (
-					<div>
+					<span>
 						<span className="file-dir">latte-art/</span>&nbsp;&nbsp;
 						<span className="file-dir">photography/</span>&nbsp;&nbsp;
-						<span className="file-dir">vim-config/</span>&nbsp;&nbsp;
-						<span className="file-dir">bjj/</span><br />
-						<span className="file-hidden">.secrets</span>&nbsp;&nbsp;
-						<span className="file-hidden">.coffee_addiction</span>
-					</div>
+						<span className="file-dir">dotfiles/</span>
+					</span>
 				);
 				break;
+
 			case "neofetch":
 				output = (
 					<pre className="neofetch-output">
@@ -114,7 +131,6 @@ const Header = () => {
         OS: Portfolio v1.0
         Shell: zsh
         Languages: Go, TypeScript, Python
-        Focus: AI tools & CI/CD
         Coffee: Always
         Status: Shipping`}
 					</pre>
@@ -154,7 +170,7 @@ const Header = () => {
 		<header>
 			<div className="container header__container">
 				<div className="dev-symbol">&lt;/&gt;</div>
-				<div className="terminal-window" onClick={handleTerminalClick}>
+				<div className="terminal-window" onClick={handleTerminalClick} ref={terminalRef}>
 					<div className="terminal-line">
 						<Prompt />
 						<span className="command typing-animation">whoami</span>
@@ -176,12 +192,12 @@ const Header = () => {
 
 					<div className="terminal-line delayed-output-4">
 						<Prompt />
-						<span className="command">ls hobbies/</span>
+						<span className="command">ls -la</span>
 					</div>
 					<div className="terminal-output delayed-output-5">
-						<span className="file-dir">latte-art/</span>&nbsp;&nbsp;
-						<span className="file-dir">photography/</span>&nbsp;&nbsp;
-						<span className="file-dir">vim-config/</span>&nbsp;&nbsp;
+						<span className="file-dir">hobbies/</span>&nbsp;&nbsp;
+						<span className="file-text">bio.txt</span>&nbsp;&nbsp;
+						<span className="file-text">contact.txt</span>&nbsp;&nbsp;
 						<span className="file-hidden">.secrets</span>
 					</div>
 
@@ -220,6 +236,16 @@ const Header = () => {
 					)}
 				</div>
 				<HeaderSocials />
+				<div className="portfolio-tagline">
+					building things. sometimes they work.{' '}
+					<a href="https://github.com/rosscondie" target="_blank" rel="noopener noreferrer">
+						→ github
+					</a>
+					{' · '}
+					<a href="https://linkedin.com/in/rosscondie" target="_blank" rel="noopener noreferrer">
+						→ linkedin
+					</a>
+				</div>
 			</div>
 		</header>
 	);

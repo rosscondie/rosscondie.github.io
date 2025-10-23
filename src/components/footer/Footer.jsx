@@ -12,26 +12,14 @@ const Footer = () => {
       <ul className="permalinks">
         <li>
           {/* eslint-disable-next-line */}
-          <a href="#">Home</a>
+          <a href="#">Back to top &#x2B06;</a>
         </li>
-        <li>
-          <a href="#about">About </a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        {/* <li>
-          <a href="#services">Services</a>
-        </li> */}
         {/* <li>
           <a href="#portfolio">Portfolio</a>
         </li> */}
         {/* <li>
-          <a href="#testimonials">Testimonials</a>
+           <a href="#contact">Contact</a>
         </li> */}
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
       </ul>
       <div className="footer__socials">
         <a href="https://github.com/rosscondie">

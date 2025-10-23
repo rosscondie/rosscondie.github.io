@@ -6,7 +6,7 @@ header {
 
 .header__container {
   text-align: center;
-  height: 50%;
+  height: 100vh;
   position: relative;
   padding: 0.5rem;
   max-width: 800px;
@@ -32,8 +32,29 @@ header {
   padding: 1.5rem;
   width: 100%;
   max-width: 600px;
+  max-height: 500px; /* Add this */
+  overflow-y: auto; /* Add this */
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   text-align: left;
+  scroll-behavior: smooth; /* Add this */
+}
+
+/* Style the scrollbar to match theme */
+.terminal-window::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-window::-webkit-scrollbar-track {
+  background: var(--color-bg-variant);
+}
+
+.terminal-window::-webkit-scrollbar-thumb {
+  background: var(--color-comment);
+  border-radius: 4px;
+}
+
+.terminal-window::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan);
 }
 
 .terminal-line {
