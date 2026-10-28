@@ -1,0 +1,36 @@
+---
+const links = [
+	{ label: 'GitHub', href: 'https://github.com/rosscondie' },
+	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/rosscondie' },
+	{ label: 'Contact', href: '/contact' },
+];
+---
+
+<nav aria-label="Elsewhere">
+	<ul>
+		{
+			links.map(({ label, href }) => (
+				<li>
+					<a href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
+						{label}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</nav>
+
+<style>
+	ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--space-1) var(--space-3);
+	}
+
+	li::before {
+		content: '→ ';
+		color: var(--color-muted);
+	}
+</style>

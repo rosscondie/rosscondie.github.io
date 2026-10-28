@@ -1,48 +1,48 @@
-# Personal Portfolio
+# rosscondie.github.io
 
-A modern, responsive personal portfolio website built with React and JavaScript. 
+A minimal personal landing page for Ross Condie, built with [Astro](https://astro.build) and deployed to GitHub Pages.
 
-This is a project I am using as a learning opportunity that show cases my work and skills.
+## Tech stack
 
-## 🛠️ Tech Stack
+- **Framework**: Astro (static output, no client JS except the contact form)
+- **Language**: TypeScript (strict)
+- **Styling**: Plain CSS with design tokens (Gruvbox dark palette, IBM Plex Mono)
+- **Contact form**: [EmailJS](https://www.emailjs.com/) via `@emailjs/browser`
+- **Deployment**: GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`) on push to `main`
 
-- **Frontend**: React 18
-- **Build Tool**: Vite
-- **Language**: JavaScript (TypeScript migration in progress)
-- **Deployment**: GitHub Pages
-- **Package Manager**: npm
+## Development
 
-## 📋 TODO List
-- [x] **Migrate from CRA to Vite**
-- [ ] **Migrate to TypeScript** - Convert all JavaScript files to TypeScript for better type safety and developer experience
-- [ ] **Implement Tailwind CSS** - Replace current CSS with Tailwind for utility-first styling
-- [ ] Implement dark/light theme toggle
-- [ ] Change email js deprecated feature to email js browser package
-- [ ] Add blog section
+Requires Node 22.23+ (CI uses Node 24).
 
-Plan to gradually convert components to TypeScript
-Will add proper type definitions for props and state
-Configure TypeScript compiler options
+```sh
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # outputs to ./dist
+npm run preview  # serve the production build
+npm run check    # type-check .astro and .ts files
+```
 
-## Tailwind CSS Migration 📋 (Planned):
+## Structure
 
-- Remove existing CSS
-- Install and configure Tailwind CSS
-- Convert all styling to utility classes
-- Maintain current design while improving maintainability
+```
+src/
+  layouts/Base.astro          # html shell, meta, fonts, global styles
+  pages/index.astro           # landing page: intro + links
+  pages/contact.astro         # contact form
+  components/                 # Intro, Links, ContactForm
+  styles/global.css           # reset + design tokens
+public/                       # CNAME, favicon
+```
 
-## 🎨 Features:
+## Roadmap
 
-- Responsive design that works on all devices
-- Clean, modern UI
-- Project showcase with live demos
-- Skills and experience sections
-- Contact information and social links
-- Fast loading times with Vite
-
-## 📱 Responsive Design
-The portfolio is fully responsive and optimized for:
-
-Desktop (1200px+)
-Tablet (768px - 1199px)
-Mobile (< 768px)
+- [x] Migrate from CRA to Vite
+- [x] Rebuild as a minimal Astro site (TypeScript, plain CSS, `@emailjs/browser`)
+- [x] Social preview image (Open Graph / Twitter meta tags)
+- [ ] Custom 404 page
+- [ ] `/now` page — current focus, updated every few months
+- [ ] `/uses` page — Neovim, dotfiles, terminal setup, espresso and film gear
+- [ ] Projects section, once there are 2–3 worth showing
+- [ ] Blog via Astro content collections (Go, k8s, DevOps notes)
+- [ ] Light/dark theme toggle (Gruvbox light variant)
+- [ ] Dependabot or Renovate to keep dependencies up to date

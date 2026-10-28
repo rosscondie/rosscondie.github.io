@@ -1,0 +1,92 @@
+/* Gruvbox dark */
+:root {
+	--color-bg: #282828;
+	--color-bg-variant: #1d2021;
+	--color-fg: #ebdbb2;
+	--color-muted: #a89984;
+	--color-primary: #fabd2f;
+	--color-accent: #fe8019;
+	--color-red: #fd6f5e; /* lightened from #fb4934 to pass WCAG AA (5.3:1) */
+
+	--font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+	--space-1: 0.5rem;
+	--space-2: 1rem;
+	--space-3: 1.5rem;
+	--space-4: 2.5rem;
+	--space-5: 4rem;
+
+	--radius: 4px;
+	--transition: 150ms ease;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background: var(--color-bg);
+	color: var(--color-fg);
+	font-family: var(--font-mono);
+	font-size: 1rem;
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container {
+	max-width: 60ch;
+	min-height: 100svh;
+	margin: 0 auto;
+	padding: var(--space-5) var(--space-2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: var(--space-4);
+}
+
+h1,
+h2 {
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 1rem;
+	color: var(--color-muted);
+	margin-bottom: var(--space-2);
+}
+
+h2::before {
+	content: '## ';
+	color: var(--color-primary);
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	transition: color var(--transition);
+}
+
+a:hover {
+	color: var(--color-accent);
+}
+
+:focus-visible {
+	outline: 2px solid var(--color-accent);
+	outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		transition: none !important;
+	}
+}
