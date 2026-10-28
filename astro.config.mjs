@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-	site: 'https://rosscondie.github.io',
+	site: 'https://www.rosscondie.com',
 	server: { port: 3000 },
 });
