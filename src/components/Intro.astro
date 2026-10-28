@@ -1,0 +1,68 @@
+---
+const focus = [
+	{ term: 'currently:', detail: 'Go, Kubernetes, TypeScript, React' },
+	{ term: 'learning:', detail: 'AI tooling, CI/CD automation, DevOps' },
+	{ term: 'dabbling:', detail: 'cybersecurity' },
+];
+---
+
+<header>
+	<h1>Ross Condie</h1>
+	<p class="role">
+		Software Developer @ <a href="https://www.vier.ai/" target="_blank" rel="noopener noreferrer">VIER</a>
+	</p>
+	<p>Building tools that solve real problems.</p>
+	<dl>
+		{
+			focus.map(({ term, detail }) => (
+				<div>
+					<dt>{term}</dt>
+					<dd>{detail}</dd>
+				</div>
+			))
+		}
+	</dl>
+	<p class="muted">
+		Away from the keyboard: dialing in espresso shots, shooting 35mm film, and configuring
+		Neovim (again).
+	</p>
+</header>
+
+<style>
+	header {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+	}
+
+	h1 {
+		font-size: clamp(1.75rem, 5vw, 2.25rem);
+	}
+
+	.role {
+		color: var(--color-muted);
+		margin-top: calc(var(--space-1) * -1);
+	}
+
+	dl {
+		display: grid;
+		gap: var(--space-1);
+	}
+
+	/* Label and detail share a line when they fit, and wrap centred when they don't. */
+	dl div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: var(--space-1);
+	}
+
+	dt {
+		color: var(--color-primary);
+		font-weight: 600;
+	}
+
+	.muted {
+		color: var(--color-muted);
+	}
+</style>

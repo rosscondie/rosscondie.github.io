@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Base title="Contact — Ross Condie" description="Get in touch with Ross Condie.">
+	<a href="/" class="back">← home</a>
+	<header>
+		<h1>Contact</h1>
+		<p>Send me a message and I'll get back to you.</p>
+	</header>
+	<ContactForm />
+</Base>
+
+<style>
+	header {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+	}
+
+	h1 {
+		font-size: clamp(1.75rem, 5vw, 2.25rem);
+	}
+
+	.back {
+		font-size: 0.875rem;
+	}
+</style>

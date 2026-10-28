@@ -1,0 +1,136 @@
+---
+---
+
+<section>
+	<form id="contact-form">
+		<label>
+			<span>Name</span>
+			<input type="text" name="name" autocomplete="name" required />
+		</label>
+		<label>
+			<span>Email</span>
+			<input type="email" name="email" autocomplete="email" required />
+		</label>
+		<label>
+			<span>Message</span>
+			<textarea name="message" rows="6" required></textarea>
+		</label>
+		<div class="actions">
+			<button type="submit">Send message</button>
+			<p class="status" role="status" aria-live="polite"></p>
+		</div>
+	</form>
+</section>
+
+<script>
+	import emailjs from '@emailjs/browser';
+
+	// EmailJS IDs are public by design; abuse protection is configured in the EmailJS dashboard.
+	const SERVICE_ID = 'service_lj4pu6s';
+	const TEMPLATE_ID = 'template_ne6o504';
+	const PUBLIC_KEY = '9v_jIrmBH7VHKl0nX';
+
+	const form = document.querySelector<HTMLFormElement>('#contact-form')!;
+	const button = form.querySelector<HTMLButtonElement>('button')!;
+	const status = form.querySelector<HTMLParagraphElement>('.status')!;
+
+	form.addEventListener('submit', async (event) => {
+		event.preventDefault();
+		button.disabled = true;
+		status.className = 'status';
+		status.textContent = 'Sending…';
+
+		try {
+			await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, { publicKey: PUBLIC_KEY });
+			form.reset();
+			status.classList.add('ok');
+			status.textContent = 'Thanks — message sent.';
+		} catch {
+			status.classList.add('error');
+			status.textContent = 'Something went wrong. Please try again, or reach me on LinkedIn.';
+		} finally {
+			button.disabled = false;
+		}
+	});
+</script>
+
+<style>
+	section {
+		width: 100%;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+		text-align: left;
+	}
+
+	label {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		font-size: 0.875rem;
+		color: var(--color-muted);
+	}
+
+	input,
+	textarea {
+		font: inherit;
+		font-size: 1rem;
+		color: var(--color-fg);
+		background: var(--color-bg-variant);
+		border: 1px solid var(--color-muted);
+		border-radius: var(--radius);
+		padding: var(--space-1) 0.75rem;
+		resize: vertical;
+		transition: border-color var(--transition);
+	}
+
+	input:focus,
+	textarea:focus {
+		outline: none;
+		border-color: var(--color-primary);
+	}
+
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: var(--space-2);
+	}
+
+	button {
+		font: inherit;
+		color: var(--color-bg);
+		background: var(--color-primary);
+		border: 0;
+		border-radius: var(--radius);
+		padding: var(--space-1) var(--space-3);
+		cursor: pointer;
+		transition: background var(--transition);
+	}
+
+	button:hover {
+		background: var(--color-accent);
+	}
+
+	button:disabled {
+		opacity: 0.6;
+		cursor: progress;
+	}
+
+	.status {
+		font-size: 0.875rem;
+		color: var(--color-muted);
+	}
+
+	.status.ok {
+		color: var(--color-primary);
+	}
+
+	.status.error {
+		color: var(--color-red);
+	}
+</style>
