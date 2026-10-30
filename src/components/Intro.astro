@@ -2,7 +2,7 @@
 const focus = [
 	{ term: 'currently:', detail: 'Go, Kubernetes, TypeScript, React' },
 	{ term: 'learning:', detail: 'AI tooling, CI/CD automation, DevOps' },
-	{ term: 'dabbling:', detail: 'cybersecurity' },
+	{ term: 'interests:', detail: 'Cybersecurity, Backend Development & Linux' },
 ];
 ---
 
@@ -23,8 +23,8 @@ const focus = [
 		}
 	</dl>
 	<p class="muted">
-		Away from the keyboard: dialing in espresso shots, shooting 35mm film, and configuring
-		Neovim (again).
+		Off the clock: looking into building a homelab, self-hosting, taking photos and eating the
+		occasional slice of cheesecake.
 	</p>
 </header>
 
@@ -32,6 +32,7 @@ const focus = [
 	header {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: var(--space-2);
 	}
 
@@ -44,22 +45,34 @@ const focus = [
 		margin-top: calc(var(--space-1) * -1);
 	}
 
+	/* One grid for all rows so labels right-align on the colon and details share a left edge. */
 	dl {
 		display: grid;
-		gap: var(--space-1);
+		grid-template-columns: auto auto;
+		gap: 0.25rem var(--space-1);
+		text-align: left;
 	}
 
-	/* Label and detail share a line when they fit, and wrap centred when they don't. */
 	dl div {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		column-gap: var(--space-1);
+		display: contents;
 	}
 
 	dt {
 		color: var(--color-primary);
 		font-weight: 600;
+		text-align: right;
+	}
+
+	@media (max-width: 30rem) {
+		dl {
+			grid-template-columns: 1fr;
+			text-align: center;
+		}
+
+		dt {
+			text-align: center;
+			margin-top: var(--space-1);
+		}
 	}
 
 	.muted {
